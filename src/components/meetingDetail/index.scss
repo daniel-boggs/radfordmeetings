@@ -23,6 +23,22 @@ span {
     margin-left: 20px;
 }
 
+span.calendar-link {
+    margin-left: 8px;
+    font-size: 12px;
+}
+
+.cal-icon {
+    background-color: white;
+    color: rgb(16, 1, 186);
+    font-size: 12px;
+}
+
+
 span.zoom-link {
     margin: 0;
+}
+
+p.meeting-count {
+    text-align: start;
 }

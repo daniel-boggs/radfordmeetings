@@ -13,14 +13,15 @@ export const meetings = [
         zoom: 'https://zoom.us/j/91608348235?pwd=ZVg4bEt2dWh2THI1WDBwY3AwQW1IUT09',
         zoomID: '916 0834 8235',
         zoomPW: 'sunrise',
-        contactName: 'Crystal'
+        contactName: 'Crystal',
+        note: ''
     },
     {
         id: 2,
         visible: true,
         day: 'Monday',
         timePT: '8:15 AM PT',
-        title: 'Hope For Today (Al Anon-ACA Focus)',
+        title: 'Hope For Today (Al-Anon-ACA Focus)',
         type: 'ACA',
         format: 'Unknown',
         method: 'Hybrid',
@@ -28,7 +29,8 @@ export const meetings = [
         zoom: 'https://us02web.zoom.us/j/87887397285',
         zoomID: '878 8739 7285',
         zoomPW: '314887',
-        contactName: ''
+        contactName: '',
+        note: ''
     },
     {
         id: 3,
@@ -43,7 +45,8 @@ export const meetings = [
         zoom: 'https://us04web.zoom.us/j/2835953698?pwd=V1NDdXU0OUFJcjUxZjVoWENKMStRZz09',
         zoomID: '283 595 3698',
         zoomPW: 'Zombies',
-        contactName: 'Erik C.'
+        contactName: 'Erik C.',
+        note: ''
     },
     {
         id: 4,
@@ -58,7 +61,8 @@ export const meetings = [
         zoom: 'https://us02web.zoom.us/j/82633330760?pwd=alpvUUdlbXhpaUZydWs5Z1Q0Zjlqdz09',
         zoomID: '283 595 3698',
         zoomPW: 'Literature',
-        contactName: 'Melissa H.'
+        contactName: 'Melissa H.',
+        note: ''
     },
     {
         id: 5,
@@ -73,7 +77,8 @@ export const meetings = [
         zoom: 'https://us02web.zoom.us/j/89389919893?pwd=Y09FMWRMU1ZFbzZSL2ZFRUJBdTV6Zz09',
         zoomID: '893 8991 9893',
         zoomPW: 'AAvillage',
-        contactName: 'Lauren'
+        contactName: 'Lauren',
+        note: ''
     },
     {
         id: 6,
@@ -88,7 +93,8 @@ export const meetings = [
         zoom: 'https://us02web.zoom.us/j/3893357431?pwd=ZnlYTm44QS9HVmxBTjJUZlRvb1Jydz09',
         zoomID: '389 335 7431',
         zoomPW: 'Sober2021',
-        contactName: 'Unknown'
+        contactName: 'Unknown',
+        note: ''
     },
     {
         id: 7,
@@ -103,7 +109,8 @@ export const meetings = [
         zoom: 'https://us02web.zoom.us/j/83585017311?pwd=eXJta3Q2eW9aTWwzZ3JaQlRiZ0NYUT09',
         zoomID: '835 8501 7311',
         zoomPW: '4343',
-        contactName: 'Alyssa L.'
+        contactName: 'Alyssa L.',
+        note: ''
     },
     {
         id: 8,
@@ -118,7 +125,8 @@ export const meetings = [
         zoom: 'https://us04web.zoom.us/j/2835953698?pwd=V1NDdXU0OUFJcjUxZjVoWENKMStRZz09',
         zoomID: '283 595 3698',
         zoomPW: 'Zombies',
-        contactName: 'Justin R.'
+        contactName: 'Justin R.',
+        note: ''
     },
     {
         id: 9,
@@ -133,7 +141,8 @@ export const meetings = [
         zoom: 'https://us06web.zoom.us/j/9959012824?pwd=ZUo0anJ4VEhFd0ZHdG1wNCticER2UT09',
         zoomID: '995 901 2824',
         zoomPW: '139431',
-        contactName: 'N/A'
+        contactName: 'N/A',
+        note: ''
     },
     {
         id: 10,
@@ -148,7 +157,8 @@ export const meetings = [
         zoom: 'https://us02web.zoom.us/j/5013772720',
         zoomID: '501 377 2720',
         zoomPW: 'recovery',
-        contactName: 'Unknown'
+        contactName: 'Unknown',
+        note: ''
     },
     {
         id: 11,
@@ -163,7 +173,8 @@ export const meetings = [
         zoom: 'N/A',
         zoomID: 'N/A',
         zoomPW: 'N/A',
-        contactName: 'Gabe'
+        contactName: 'Gabe',
+        note: ''
     },
     {
         id: 12,
@@ -178,7 +189,8 @@ export const meetings = [
         zoom: 'https://us04web.zoom.us/j/9072328568?pwd=bm5xZzdNOVE3ZEhKMHYwanVnVVl1dz09',
         zoomID: '907 232 8568',
         zoomPW: 'RPride',
-        contactName: 'Gio'
+        contactName: 'Gio',
+        note: ''
     },
     {
         id: 13,
@@ -193,7 +205,8 @@ export const meetings = [
         zoom: 'https://us04web.zoom.us/j/2835953698?pwd=V1NDdXU0OUFJcjUxZjVoWENKMStRZz09',
         zoomID: '283 595 3698',
         zoomPW: 'Zombies',
-        contactName: 'Ash'
+        contactName: 'Ash',
+        note: ''
     },
 
     //TUESDAY
@@ -210,7 +223,8 @@ export const meetings = [
         zoom: 'https://us06web.zoom.us/j/91608348235?pwd=ZVg4bEt2dWh2THI1WDBwY3 be AwQW1IUT09',
         zoomID: '916 0834 8235',
         zoomPW: 'sunrise',
-        contactName: 'Gary'
+        contactName: 'Gary',
+        note: ''
     },
     {
         id: 15,
@@ -218,14 +232,15 @@ export const meetings = [
         day: 'Tuesday',
         timePT: '8:15 AM PT',
         title: 'Wake Up and Smell the Coffee!',
-        type: 'Al Anon',
+        type: 'Al-Anon',
         format: 'Participation',
         method: 'Hybrid',
         physicalLocation: '4849 Van Nuys Blvd suite 103 Sherman Oaks - Radford Room',
         zoom: 'https://zoom.us/j/85759587914',
         zoomID: '857 5958 7914',
         zoomPW: '874152',
-        contactName: 'Unknown'
+        contactName: 'Unknown',
+        note: ''
     },
     {
         id: 16,
@@ -240,7 +255,8 @@ export const meetings = [
         zoom: 'https://us02web.zoom.us/j/3893357431?pwd=ZnlYTm44QS9HVmxBTjJUZlRvb1Jydz09',
         zoomID: '389 335 7431',
         zoomPW: 'Sober2021',
-        contactName: 'Aaron'
+        contactName: 'Aaron',
+        note: ''
     },
     {
         id: 17,
@@ -255,7 +271,8 @@ export const meetings = [
         zoom: 'https://us02web.zoom.us/j/7667090526?pwd=MlVwbEFscU9CRmU1aFIyREcxZVV3UT09',
         zoomID: '766 709 0526',
         zoomPW: '019289',
-        contactName: 'Alex & Hunter'
+        contactName: 'Alex & Hunter',
+        note: ''
     },
     {
         id: 18,
@@ -270,7 +287,8 @@ export const meetings = [
         zoom: 'https://us02web.zoom.us/j/3893357431?pwd=ZnlYTm44QS9HVmxBTjJUZlRvb1Jydz09',
         zoomID: '389 335 7431',
         zoomPW: 'Sober2021',
-        contactName: 'Tina'
+        contactName: 'Tina',
+        note: ''
     },
     {
         id: 19,
@@ -285,7 +303,8 @@ export const meetings = [
         zoom: 'N/A',
         zoomID: 'N/A',
         zoomPW: 'N/A',
-        contactName: 'Unknown'
+        contactName: 'Unknown',
+        note: ''
     },
     {
         id: 20,
@@ -300,7 +319,8 @@ export const meetings = [
         zoom: 'https://zoom.us/j/112662426?pwd=NmlicVQvZ29qVTN5Q2VsQXNIUEJRQT09',
         zoomID: '112 662 426',
         zoomPW: '009932',
-        contactName: 'Natara'
+        contactName: 'Natara',
+        note: ''
     },
     {
         id: 21,
@@ -315,7 +335,8 @@ export const meetings = [
         zoom: 'https://us04web.zoom.us/j/2835953698?pwd=V1NDdXU0OUFJcjUxZjVoWENKMStRZz09',
         zoomID: '283 595 3698',
         zoomPW: 'Zombies',
-        contactName: 'Isidro C.'
+        contactName: 'Isidro C.',
+        note: ''
     },
     {
         id: 22,
@@ -330,7 +351,8 @@ export const meetings = [
         zoom: 'https://us06web.zoom.us/j/9959012824?pwd=ZUo0anJ4VEhFd0ZHdG1wNCticER2UT09',
         zoomID: '995 901 2824',
         zoomPW: '139431',
-        contactName: 'Unknown'
+        contactName: 'Unknown',
+        note: ''
     },
     {
         id: 23,
@@ -345,7 +367,8 @@ export const meetings = [
         zoom: 'N/A',
         zoomID: 'N/A',
         zoomPW: 'N/A',
-        contactName: 'David H.'
+        contactName: 'David H.',
+        note: ''
     },
     {
         id: 24,
@@ -360,7 +383,8 @@ export const meetings = [
         zoom: 'https://us02web.zoom.us/j/81641504446?pwd=V3RybFZMUU9ycGY4WEtMWHdrVVhoUT09',
         zoomID: '816 4150 4446',
         zoomPW: 'Page69',
-        contactName: 'Jesse T.'
+        contactName: 'Jesse T.',
+        note: ''
     },
     {
         id: 25,
@@ -375,7 +399,8 @@ export const meetings = [
         zoom: 'N/A',
         zoomID: 'N/A',
         zoomPW: 'N/A',
-        contactName: 'Sevak'
+        contactName: 'Sevak',
+        note: ''
     },
     {
         id: 26,
@@ -390,7 +415,8 @@ export const meetings = [
         zoom: 'https://us04web.zoom.us/j/2835953698?pwd=V1NDdXU0OUFJcjUxZjVoWENKMStRZz09',
         zoomID: '283 595 3698',
         zoomPW: 'Zombies',
-        contactName: 'Andrea'
+        contactName: 'Andrea',
+        note: ''
     },
 
     //WEDNESDAY
@@ -407,22 +433,24 @@ export const meetings = [
         zoom: 'https://zoom.us/j/91608348235?pwd=ZVg4bEt2dWh2THI1WDBwY3AwQW1IUT09',
         zoomID: '916 0834 8235',
         zoomPW: 'sunrise',
-        contactName: 'Logan C.'
+        contactName: 'Logan C.',
+        note: ''
     },
     {
         id: 28,
         visible: true,
         day: 'Wednesday',
         timePT: '8:30 AM PT',
-        title: 'In the Solution Alanon Meeting: For Family and Friends of Alcoholics',
-        type: 'Al Anon',
+        title: 'In the Solution Al-Anon Meeting: For Family and Friends of Alcoholics',
+        type: 'Al-Anon',
         format: 'Unknown',
         method: 'Hybrid',
         physicalLocation: '4849 Van Nuys Blvd suite 103 Sherman Oaks - Serenity Room',
         zoom: 'https://zoom.us/j/168127785',
         zoomID: '168127785',
         zoomPW: '375376',
-        contactName: 'Cathy & Kristin'
+        contactName: 'Cathy & Kristin',
+        note: ''
     },
     {
         id: 29,
@@ -437,7 +465,8 @@ export const meetings = [
         zoom: 'https://us04web.zoom.us/j/2835953698?pwd=V1NDdXU0OUFJcjUxZjVoWENKMStRZz09',
         zoomID: '283 595 3698',
         zoomPW: 'Zombies',
-        contactName: 'Jacob'
+        contactName: 'Jacob',
+        note: ''
     },
     {
         id: 30,
@@ -452,7 +481,8 @@ export const meetings = [
         zoom: 'https://us02web.zoom.us/j/82633330760?pwd=alpvUUdlbXhpaUZydWs5Z1Q0Zjlqdz09',
         zoomID: '826 3333 0760',
         zoomPW: 'Literature',
-        contactName: 'Andi C.'
+        contactName: 'Andi C.',
+        note: ''
     },
     {
         id: 31,
@@ -467,7 +497,8 @@ export const meetings = [
         zoom: 'https://us04web.zoom.us/j/2835953698?pwd=V1NDdXU0OUFJcjUxZjVoWENKMStRZz09',
         zoomID: '283 595 3698',
         zoomPW: 'Zombies',
-        contactName: 'Dr John & Andi C.'
+        contactName: 'Dr John & Andi C.',
+        note: ''
     },
     {
         id: 32,
@@ -482,7 +513,8 @@ export const meetings = [
         zoom: 'https://us04web.zoom.us/j/2835953698?pwd=V1NDdXU0OUFJcjUxZjVoWENKMStRZz09',
         zoomID: '283 595 3698',
         zoomPW: 'Zombies',
-        contactName: 'Ryan'
+        contactName: 'Ryan',
+        note: ''
     },
     {
         id: 33,
@@ -497,7 +529,8 @@ export const meetings = [
         zoom: 'N/A',
         zoomID: 'N/A',
         zoomPW: 'N/A',
-        contactName: 'Unknown'
+        contactName: 'Unknown',
+        note: ''
     },
     {
         id: 34,
@@ -512,7 +545,8 @@ export const meetings = [
         zoom: 'https://us02web.zoom.us/j/7667090526?pwd=MlVwbEFscU9CRmU1aFIyREcxZVV3UT09',
         zoomID: '766 709 0526',
         zoomPW: '019289',
-        contactName: 'Josh & Dr. John'
+        contactName: 'Josh & Dr. John',
+        note: ''
     },
     {
         id: 35,
@@ -527,7 +561,8 @@ export const meetings = [
         zoom: 'https://us02web.zoom.us/j/87577474505',
         zoomID: '875 7747 4505',
         zoomPW: 'N/A',
-        contactName: 'Krystle & Kristen M.'
+        contactName: 'Krystle & Kristen M.',
+        note: ''
     },
     {
         id: 36,
@@ -542,7 +577,8 @@ export const meetings = [
         zoom: 'https://us04web.zoom.us/j/2835953698?pwd=V1NDdXU0OUFJcjUxZjVoWENKMStRZz09',
         zoomID: '283 595 3698',
         zoomPW: 'Zombies',
-        contactName: 'Marion'
+        contactName: 'Marion',
+        note: ''
     },
     {
         id: 37,
@@ -557,7 +593,8 @@ export const meetings = [
         zoom: 'N/A',
         zoomID: 'N/A',
         zoomPW: 'N/A',
-        contactName: 'Marion'
+        contactName: 'Marion',
+        note: ''
     },
     {
         id: 38,
@@ -572,7 +609,8 @@ export const meetings = [
         zoom: 'https://us06web.zoom.us/j/9959012824?pwd=ZUo0anJ4VEhFd0ZHdG1wNCticER2UT09',
         zoomID: '995 901 2824',
         zoomPW: '139431',
-        contactName: 'N/A'
+        contactName: 'N/A',
+        note: ''
     },
     {
         id: 39,
@@ -587,7 +625,8 @@ export const meetings = [
         zoom: 'N/A',
         zoomID: 'N/A',
         zoomPW: 'N/A',
-        contactName: 'Unknown'
+        contactName: 'Unknown',
+        note: ''
     },
     {
         id: 40,
@@ -602,7 +641,8 @@ export const meetings = [
         zoom: 'N/A',
         zoomID: 'N/A',
         zoomPW: 'N/A',
-        contactName: 'Unknown'
+        contactName: 'Unknown',
+        note: ''
     },
     {
         id: 41,
@@ -648,7 +688,8 @@ export const meetings = [
         zoom: 'https://us04web.zoom.us/j/2835953698?pwd=V1NDdXU0OUFJcjUxZjVoWENKMStRZz09',
         zoomID: '283 595 3698',
         zoomPW: 'Zombies',
-        contactName: 'Krystle'
+        contactName: 'Krystle',
+        note: ''
     },
 
     //THURSDAY
@@ -657,15 +698,16 @@ export const meetings = [
         visible: true,
         day: 'Thursday',
         timePT: '8:15 AM PT',
-        title: 'Wake Up and Smell The Coffee! (Alanon)',
-        type: 'Al Anon',
+        title: 'Wake Up and Smell The Coffee! (Al-Anon)',
+        type: 'Al-Anon',
         format: 'Speaker/Participation',
         method: 'Hybrid',
         physicalLocation: '4849 Van Nuys Blvd suite 103 Sherman Oaks - Serenity Room',
         zoom: 'https://us02web.zoom.us/j/89331786908',
         zoomID: '893 3178 6908',
         zoomPW: 'N/A',
-        contactName: 'Unknown'
+        contactName: 'Unknown',
+        note: ''
     },
     {
         id: 45,
@@ -680,6 +722,428 @@ export const meetings = [
         zoom: 'https://us02web.zoom.us/j/89389919893?pwd=Y09FMWRMU1ZFbzZSL2ZFRUJBdTV6Zz09',
         zoomID: '893 8991 9893',
         zoomPW: 'AAvillage',
-        contactName: 'Erin'
+        contactName: 'Erin',
+        note: ''
     },
+    {
+        id: 46,
+        visible: true,
+        day: 'Thursday',
+        timePT: '12:00 PM PT',
+        title: 'The Rad Pack Men’s Stag',
+        type: 'AA',
+        format: 'Participation',
+        method: 'Online',
+        physicalLocation: 'N/A',
+        zoom: 'https://us02web.zoom.us/j/5020147373?pwd=T2tJZnNMSUF0N1BnLzdEem15UnNadz09',
+        zoomID: '502 014 7373',
+        zoomPW: 'moorpark3',
+        contactName: 'Joe W.',
+        note: ''
+    },
+    {
+        id: 47,
+        visible: true,
+        day: 'Thursday',
+        timePT: '12:00 PM PT',
+        title: 'All the Sober Ladies: Lunch with us at Noon',
+        type: 'AA',
+        format: 'Participation',
+        method: 'Online',
+        physicalLocation: 'N/A',
+        zoom: 'https://us02web.zoom.us/j/7667090526?pwd=MlVwbEFscU9CRmU1aFIyREcxZVV3UT09',
+        zoomID: '019289',
+        zoomPW: 'N/A',
+        contactName: 'Brianna',
+        note: ''
+    },
+    {
+        id: 48,
+        visible: true,
+        day: 'Thursday',
+        timePT: '12:00 PM PT',
+        title: 'Zombies by Day',
+        type: 'AA',
+        format: 'Speaker/Participation',
+        method: 'Hybrid',
+        physicalLocation: '4849 Van Nuys Blvd suite 103 Sherman Oaks - Radford Room',
+        zoom: 'https://us02web.zoom.us/j/89389919893?pwd=Y09FMWRMU1ZFbzZSL2ZFRUJBdTV6Zz09',
+        zoomID: '893 8991 9893',
+        zoomPW: 'AAvillage',
+        contactName: 'Arthur',
+        note: 'Thursday and Friday'
+    },
+    {
+        id: 49,
+        visible: true,
+        day: 'Thursday',
+        timePT: '1:30 PM PT',
+        title: 'Zaddies and Addies',
+        type: 'AA',
+        format: 'Speaker/Participation',
+        method: 'Hybrid',
+        physicalLocation: '4849 Van Nuys Blvd suite 103 Sherman Oaks - Radford Room',
+        zoom: 'https://us02web.zoom.us/j/3893357431?pwd=ZnlYTm44QS9HVmxBTjJUZlRvb1Jydz09',
+        zoomID: '389 335 7431',
+        zoomPW: 'Sober2021',
+        contactName: 'Mikie C. & Julie',
+        note: ''
+    },
+    {
+        id: 50,
+        visible: true,
+        day: 'Thursday',
+        timePT: '3:00 PM PT',
+        title: 'Letting Go of The Bull****',
+        type: 'AA',
+        format: 'Speaker/Participation',
+        method: 'Hybrid',
+        physicalLocation: '4849 Van Nuys Blvd suite 103 Sherman Oaks - Radford Room',
+        zoom: 'https://us02web.zoom.us/j/83802795761?pwd=OFJURjQ0ejJZK0hRaXF5TVBnTm1EZz09',
+        zoomID: '83802795761',
+        zoomPW: 'letgo',
+        contactName: 'Tiffany',
+        note: ''
+    },
+    {
+        id: 51,
+        visible: true,
+        day: 'Thursday',
+        timePT: '4:30 PM PT',
+        title: 'Radford Hall’s Thirsty Thursdays',
+        type: 'AA',
+        format: 'Speaker/Participation',
+        method: 'Hybrid',
+        physicalLocation: '4849 Van Nuys Blvd suite 103 Sherman Oaks - Radford Room',
+        zoom: 'https://us05web.zoom.us/j/83056485054?pwd=TjZYeVd1Y1NaNzJEdUZhdUIyRmZ2Zz09',
+        zoomID: '830 5648 5054',
+        zoomPW: '675244',
+        contactName: 'Maurice',
+        note: ''
+    },
+    {
+        id: 52,
+        visible: true,
+        day: 'Thursday',
+        timePT: '6:00 PM PT',
+        title: 'The Fix',
+        type: 'AA',
+        format: 'Speaker/Participation',
+        method: 'Hybrid',
+        physicalLocation: '4849 Van Nuys Blvd suite 103 Sherman Oaks - Radford Room',
+        zoom: 'https://us04web.zoom.us/j/2835953698?pwd=V1NDdXU0OUFJcjUxZjVoWENKMStRZz09',
+        zoomID: '283 595 3698',
+        zoomPW: 'Zombies',
+        contactName: 'Paul V',
+        note: ''
+    },
+    {
+        id: 53,
+        visible: true,
+        day: 'Thursday',
+        timePT: '6:00 PM PT',
+        title: 'Into The Triad',
+        type: 'AA',
+        format: 'Speaker/Participation',
+        method: 'Online',
+        physicalLocation: 'N/A',
+        zoom: 'https://us06web.zoom.us/j/9959012824?pwd=ZUo0anJ4VEhFd0ZHdG1wNCticER2UT09',
+        zoomID: '995 901 2824',
+        zoomPW: '139431',
+        contactName: 'N/A',
+        note: ''
+    },
+    {
+        id: 54,
+        visible: true,
+        day: 'Thursday',
+        timePT: '7:00 PM PT',
+        title: '“Secrets” AA Meeting',
+        type: 'AA',
+        format: 'Speaker/Participation',
+        method: 'Online',
+        physicalLocation: 'N/A',
+        zoom: 'https://us04web.zoom.us/j/75776835114?pwd=UHYyYU5ySjRJMGxrSUNtQ2lROGladz09',
+        zoomID: '757 7683 5114',
+        zoomPW: 'Secrets',
+        contactName: 'Natasha',
+        note: ''
+    },
+    {
+        id: 55,
+        visible: true,
+        day: 'Thursday',
+        timePT: '7:30 PM PT',
+        title: 'Principles Before Personalities BBS',
+        type: 'AA',
+        format: 'Participation',
+        method: 'Hybrid',
+        physicalLocation: '4849 Van Nuys Blvd suite 103 Sherman Oaks - Radford Room',
+        zoom: 'https://us02web.zoom.us/j/87205281971?pwd=TXZ2MFBveXlHUnMyT2oyQ090YjUzZz09',
+        zoomID: '872 0528 1971',
+        zoomPW: 'PBPBBS',
+        contactName: 'Quincy',
+        note: ''
+    },
+    {
+        id: 56,
+        visible: true,
+        day: 'Thursday',
+        timePT: '8:00 PM PT',
+        title: 'The Love Boat: How to Relation-Ship',
+        type: 'AA',
+        format: 'Speaker/Participation',
+        method: 'Hybrid',
+        physicalLocation: '4849 Van Nuys Blvd suite 103 Sherman Oaks - Serenity Room',
+        zoom: 'https://us02web.zoom.us/j/7667090526?pwd=MlVwbEFscU9CRmU1aFIyREcxZVV3UT09',
+        zoomID: '766 709 0526',
+        zoomPW: '019289',
+        contactName: 'Melinda & Tawnee',
+        note: ''
+    },
+    {
+        id: 57,
+        visible: true,
+        day: 'Thursday',
+        timePT: '10:00 PM PT',
+        title: 'Radford Zombies',
+        type: 'AA',
+        format: 'Speaker/Participation',
+        method: 'Hybrid',
+        physicalLocation: '4849 Van Nuys Blvd suite 103 Sherman Oaks - Radford Room',
+        zoom: 'https://us04web.zoom.us/j/2835953698?pwd=V1NDdXU0OUFJcjUxZjVoWENKMStRZz09',
+        zoomID: '283 595 3698',
+        zoomPW: 'Zombies',
+        contactName: 'France',
+        note: ''
+    },
+
+    //FRIDAY
+    {
+        id: 58,
+        visible: true,
+        day: 'Friday',
+        timePT: '8:15 AM PT',
+        title: '4th Step Study (Alanon)',
+        type: 'Al-Anon',
+        format: 'Unknown',
+        method: 'Hybrid',
+        physicalLocation: '4849 Van Nuys Blvd suite 103 Sherman Oaks - Serenity Room',
+        zoom: 'https://zoom.us/j/83533107299',
+        zoomID: '835 3310 7299',
+        zoomPW: 'inventory',
+        contactName: 'Unknown',
+        note: ''
+    },
+    {
+        id: 59,
+        visible: true,
+        day: 'Friday',
+        timePT: '9:00 AM PT',
+        title: 'Rise and Reflect',
+        type: 'AA',
+        format: 'Participation',
+        method: 'Hybrid',
+        physicalLocation: '4849 Van Nuys Blvd suite 103 Sherman Oaks - Radford Room',
+        zoom: 'https://us02web.zoom.us/j/81504162089?pwd=czY3NlN2R1BNWmJtYUJGT3BRUmloQT09',
+        zoomID: '815 0416 2089',
+        zoomPW: 'Reflect',
+        contactName: 'Paul',
+        note: ''
+    },
+    {
+        id: 60,
+        visible: true,
+        day: 'Friday',
+        timePT: '11:00 AM PT',
+        title: 'What Would Bill Do (WWBD)?',
+        type: 'AA',
+        format: 'Participation',
+        method: 'Hybrid',
+        physicalLocation: '4849 Van Nuys Blvd suite 103 Sherman Oaks - Serenity Room',
+        zoom: 'https://us02web.zoom.us/j/82633330760?pwd=alpvUUdlbXhpaUZydWs5Z1Q0Zjlqdz09',
+        zoomID: '826 3333 0760',
+        zoomPW: 'Literature',
+        contactName: 'Logan C.',
+        note: 'Reading and discussion from As Bill Sees It'
+    },
+    {
+        id: 61,
+        visible: true,
+        day: 'Friday',
+        timePT: '12:00 PM PT',
+        title: 'Aloha Friday Step Study',
+        type: 'AA',
+        format: 'Participation',
+        method: 'Online',
+        physicalLocation: 'N/A',
+        zoom: 'https://us02web.zoom.us/j/82949212314?pwd=aGhnYzZHWm5Xem5samIrd2VQa2o2QT09',
+        zoomID: '829 4921 2314',
+        zoomPW: 'aloha',
+        contactName: 'Brendan',
+        note: '\'The Pacific Connection\''
+    },
+    {
+        id: 62,
+        visible: true,
+        day: 'Friday',
+        timePT: '12:00 PM PT',
+        title: 'Zombies by Day',
+        type: 'AA',
+        format: 'Speaker/Participation',
+        method: 'Hybrid',
+        physicalLocation: '4849 Van Nuys Blvd suite 103 Sherman Oaks - Radford Room',
+        zoom: 'https://us02web.zoom.us/j/89389919893?pwd=Y09FMWRMU1ZFbzZSL2ZFRUJBdTV6Zz09',
+        zoomID: '893 8991 9893',
+        zoomPW: 'AAvillage',
+        contactName: 'Michaela, Mel, & France',
+        note: 'Thursday and Friday'
+    },
+    {
+        id: 63,
+        visible: true,
+        day: 'Friday',
+        timePT: '3:00 PM PT',
+        title: 'AABUNDANCE (An AA Mtg Focused on Abundance)',
+        type: 'AA',
+        format: 'Speaker/Participation',
+        method: 'Hybrid',
+        physicalLocation: '4849 Van Nuys Blvd suite 103 Sherman Oaks - Radford Room',
+        zoom: 'https://us05web.zoom.us/j/83056485054?pwd=TjZYeVd1Y1NaNzJEdUZhdUIyRmZ2Zz09',
+        zoomID: '830 5648 5054',
+        zoomPW: '675244',
+        contactName: 'Vikki from Manchester and Heather L.',
+        note: ''
+    },
+    {
+        id: 64,
+        visible: true,
+        day: 'Friday',
+        timePT: '5:15 PM PT',
+        title: 'MA Radford High Hopes',
+        type: 'MA',
+        format: 'Speaker/Participation',
+        method: 'Speaker',
+        physicalLocation: '4849 Van Nuys Blvd suite 103 Sherman Oaks - Serenity Room',
+        zoom: 'https://us02web.zoom.us/j/86040064528?pwd=WHFFYm14bVB1RnJpMjBQc1VDSkx6UT09',
+        zoomID: '860 4006 4528',
+        zoomPW: 'hope2all!',
+        contactName: 'Jonathan C.',
+        note: ''
+    },
+    {
+        id: 65,
+        visible: true,
+        day: 'Friday',
+        timePT: '6:00 PM PT',
+        title: 'The Fix',
+        type: 'AA',
+        format: 'Speaker/Participation',
+        method: 'Hybrid',
+        physicalLocation: '4849 Van Nuys Blvd suite 103 Sherman Oaks - Radford Room',
+        zoom: 'https://us04web.zoom.us/j/2835953698?pwd=V1NDdXU0OUFJcjUxZjVoWENKMStRZz09',
+        zoomID: '283 595 3698',
+        zoomPW: 'Zombies',
+        contactName: 'Little Patrick',
+        note: ''
+    },
+    {
+        id: 66,
+        visible: true,
+        day: 'Friday',
+        timePT: '6:00 PM PT',
+        title: 'Into The Triad',
+        type: 'AA',
+        format: 'Speaker/Participation',
+        method: 'Online',
+        physicalLocation: 'N/A',
+        zoom: 'https://us06web.zoom.us/j/9959012824?pwd=ZUo0anJ4VEhFd0ZHdG1wNCticER2UT09',
+        zoomID: '995 901 2824',
+        zoomPW: '139431',
+        contactName: 'N/A',
+        note: ''
+    },
+    {
+        id: 67,
+        visible: true,
+        day: 'Friday',
+        timePT: '6:45 PM PT',
+        title: 'Women’s Step and Tradition Study',
+        type: 'AA',
+        format: 'Participation',
+        method: 'Hybrid',
+        physicalLocation: '4849 Van Nuys Blvd suite 103 Sherman Oaks - Serenity Room',
+        zoom: 'https://us02web.zoom.us/j/71150328609?pwd=WUlQN0tVa2NLRHpGU1ZEQjhoWkUrZz09',
+        zoomID: '711 5032 8609',
+        zoomPW: '16450',
+        contactName: 'Dani',
+        note: ''
+    },
+    {
+        id: 68,
+        visible: true,
+        day: 'Friday',
+        timePT: '8:00 PM PT',
+        title: 'Freaky Friday: AA Meeting Where It is safe to talk About It All!',
+        type: 'AA',
+        format: 'Speaker/Participation',
+        method: 'Hybrid',
+        physicalLocation: '4849 Van Nuys Blvd suite 103 Sherman Oaks - Radford Room',
+        zoom: 'https://us04web.zoom.us/j/2835953698?pwd=V1NDdXU0OUFJcjUxZjVoWENKMStRZz09',
+        zoomID: '283 595 3698',
+        zoomPW: 'Zombies',
+        contactName: 'Momo',
+        note: ''
+    },
+    {
+        id: 69,
+        visible: true,
+        day: 'Friday',
+        timePT: '8:00 PM PT',
+        title: 'Freaky Friday: AA Meeting Where It is safe to talk About It All!',
+        type: 'AA',
+        format: 'Speaker/Participation',
+        method: 'Hybrid',
+        physicalLocation: '4849 Van Nuys Blvd suite 103 Sherman Oaks - Radford Room',
+        zoom: 'https://us04web.zoom.us/j/2835953698?pwd=V1NDdXU0OUFJcjUxZjVoWENKMStRZz09',
+        zoomID: '283 595 3698',
+        zoomPW: 'Zombies',
+        contactName: 'Momo',
+        note: ''
+    },
+    {
+        id: 70,
+        visible: true,
+        day: 'Friday',
+        timePT: '9:00 PM PT',
+        title: 'The Closer',
+        type: 'AA',
+        format: 'Speaker/Participation',
+        method: 'In Person',
+        physicalLocation: '4849 Van Nuys Blvd suite 103 Sherman Oaks - Serenity Room',
+        zoom: 'N/A',
+        zoomID: 'N/A',
+        zoomPW: 'N/A',
+        contactName: 'Jeff D. & Stephanie',
+        note: 'Open to all'
+    },
+    {
+        id: 71,
+        visible: true,
+        day: 'Friday',
+        timePT: '10:00 PM PT',
+        title: 'Radford Zombies',
+        type: 'AA',
+        format: 'Speaker/Participation',
+        method: 'Hybrid',
+        physicalLocation: '4849 Van Nuys Blvd suite 103 Sherman Oaks - Radford Room',
+        zoom: 'https://us04web.zoom.us/j/2835953698?pwd=V1NDdXU0OUFJcjUxZjVoWENKMStRZz09',
+        zoomID: '283 595 3698',
+        zoomPW: 'Zombies',
+        contactName: 'Melinda',
+        note: ''
+    },
+
+    //SATURDAY
+    
 ]
