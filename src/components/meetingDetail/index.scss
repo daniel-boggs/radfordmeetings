@@ -1,0 +1,28 @@
+.accordion-header {
+    .accordion-button {
+        color: black;
+    }
+}
+
+.accordion-body {
+    display: flex;
+    text-align: initial;
+    margin-left: 20px;
+    
+    a {
+        color: black;
+    }
+}
+
+button.accordion-button:not(.collapsed) {
+    background-color: #d9e1eb!important;
+    color: #2e3272 !important;
+}
+
+span {
+    margin-left: 20px;
+}
+
+span.zoom-link {
+    margin: 0;
+}

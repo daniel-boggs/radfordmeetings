@@ -1,0 +1,20 @@
+.not-found {
+    p {
+        a {
+            color: #000;
+            text-decoration: underline;
+        }
+    }
+
+    img {
+        height: 250px;
+    }
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
