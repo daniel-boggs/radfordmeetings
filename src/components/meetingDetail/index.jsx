@@ -1,6 +1,7 @@
 import Accordion from 'react-bootstrap/Accordion';
 import './index.scss';
 import { BsCalendarWeek } from 'react-icons/bs'
+
 import { meetings } from '../../configs/meetings'
 import { defaultDayOfWeek } from '../../utils/dayOfTheWeek';
 
@@ -20,6 +21,11 @@ function MeetingDetail({ meetings }) {
       </span>
     );
   }
+
+
+  // TO DO --- FINISH THIS ICS MAGIC
+
+
   if (meetings.length > 0) {
   return (
     <div>
