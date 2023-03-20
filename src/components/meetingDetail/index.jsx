@@ -1,6 +1,7 @@
 import Accordion from 'react-bootstrap/Accordion';
 import './index.scss';
 import { BsCalendarWeek } from 'react-icons/bs'
+import AddToCalendar from '../addToCalendar';
 
 import { meetings } from '../../configs/meetings'
 import { defaultDayOfWeek } from '../../utils/dayOfTheWeek';
@@ -22,39 +23,52 @@ function MeetingDetail({ meetings }) {
     );
   }
 
-
-  // TO DO --- FINISH THIS ICS MAGIC
-
-
   if (meetings.length > 0) {
-  return (
-    <div>
-    <p className='meeting-count'>Total: { meetings.length } Meetings</p>
-    <Accordion defaultActiveKey="">
-      {
-        meetings
-          .map((m) => {
-            return(
-            <Accordion.Item eventKey={m.id}>
-            <Accordion.Header><span><strong>{m.day.charAt(0).toUpperCase()+ m.day.slice(1) + ' ' + m.timePT}</strong></span><span>{m.title + ' (' + m.method + ')' }</span></Accordion.Header>
-            <Accordion.Body>
-              <container>
-                <strong>Date/Time: </strong><br />{ m.day.charAt(0).toUpperCase()+ m.day.slice(1) + ' ' + m.timePT }<br />
-                <a href="javascript:void(0)"><BsCalendarWeek className='cal-icon' /><span className='calendar-link'>Add to Calendar</span></a> <br /><br />
-                <strong>Type: </strong><br />{ m.type }<br /><br />
-                <strong>Format: </strong><br />{ m.format }<br /><br />
-                <strong>Method: </strong><br />{ m.method }<br /><br />
-                <strong>Physical Location: </strong><br />{ m.physicalLocation }<br /><br />
-                <strong>Zoom Link: </strong><br /> { zoomLink(m.zoom) }<br /><br />
-                <strong>Meeting ID: </strong><br />{ m.zoomID }<br /><br />
-                <strong>Passcode: </strong><br />{ m.zoomPW }<br /><br />
-                <strong>Contact: </strong><br /> { m.contactName }<br /><br />
-                <strong>Note: </strong><br /> { m.note ? m.note : '' }
-              </container>
-            </Accordion.Body>
-          </Accordion.Item>
-          )})
-      }
+    return (
+      <div>
+        <p className='meeting-count'>Total: { meetings.length } Meetings</p>
+        <Accordion defaultActiveKey="">
+          {
+            meetings.map((m) => {
+              let time12h = m.timePT;
+              
+              const convertTime12to24 = (time12h) => {
+                const [time, modifier] = time12h.split(' ');
+
+                let [hours, minutes] = time.split(':');
+          
+                if (hours === '12') {
+                  hours = '00';
+                }
+
+                if (modifier === 'PM') {
+                  hours = parseInt(hours, 10) + 12;
+                }
+            
+                return [hours, minutes];
+              }
+
+              return(
+                <Accordion.Item eventKey={m.id}>
+                  <Accordion.Header><span><strong>{m.day.charAt(0).toUpperCase()+ m.day.slice(1) + ' ' + m.timePT}</strong></span><span>{m.title + ' (' + m.method + ')' }</span></Accordion.Header>
+                  <Accordion.Body>
+                    <container>
+                      <strong>Date/Time: </strong><br />{ m.day.charAt(0).toUpperCase()+ m.day.slice(1) + ' ' + m.timePT }<br />
+                      <AddToCalendar dateTime={ [2023, 3, 19, Number(convertTime12to24(time12h)[0]),Number(convertTime12to24(time12h)[1])] } title={ m.title } description={'Testing'} location={m.location}/><br /><br />
+                      <strong>Type: </strong><br />{ m.type }<br /><br />
+                      <strong>Format: </strong><br />{ m.format }<br /><br />
+                      <strong>Method: </strong><br />{ m.method }<br /><br />
+                      <strong>Physical Location: </strong><br />{ m.physicalLocation }<br /><br />
+                      <strong>Zoom Link: </strong><br /> { zoomLink(m.zoom) }<br /><br />
+                      <strong>Meeting ID: </strong><br />{ m.zoomID }<br /><br />
+                      <strong>Passcode: </strong><br />{ m.zoomPW }<br /><br />
+                      <strong>Contact: </strong><br /> { m.contactName }<br /><br />
+                      <strong>Note: </strong><br /> { m.note ? m.note : '' }
+                    </container>
+                  </Accordion.Body>
+                </Accordion.Item>
+            )})
+          }
     </Accordion>
     </div>
   );

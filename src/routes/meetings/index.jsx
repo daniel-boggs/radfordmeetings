@@ -17,6 +17,8 @@ const Meetings = () => {
     var dayOfWeek;
 
     switch (day) {
+        case 0: dayOfWeek = 'sunday';
+        break;
         case 1: dayOfWeek = 'monday';
         break;
         case 2: dayOfWeek = 'tuesday';
@@ -28,8 +30,6 @@ const Meetings = () => {
         case 5: dayOfWeek = 'friday';
         break;
         case 6: dayOfWeek = 'saturday';
-        break;
-        case 7: dayOfWeek = 'sunday';
         break;
         default: dayOfWeek = 'monday';
     }
