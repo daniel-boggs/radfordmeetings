@@ -47,14 +47,15 @@ function MeetingDetail({ meetings }) {
             
                 return [hours, minutes];
               }
-
+              //TO DO: Create Cal Description and add in  Location info to ICS
               return(
                 <Accordion.Item eventKey={m.id}>
                   <Accordion.Header><span><strong>{m.day.charAt(0).toUpperCase()+ m.day.slice(1) + ' ' + m.timePT}</strong></span><span>{m.title + ' (' + m.method + ')' }</span></Accordion.Header>
                   <Accordion.Body>
                     <container>
                       <strong>Date/Time: </strong><br />{ m.day.charAt(0).toUpperCase()+ m.day.slice(1) + ' ' + m.timePT }<br />
-                      <AddToCalendar dateTime={ [2023, 3, 19, Number(convertTime12to24(time12h)[0]),Number(convertTime12to24(time12h)[1])] } title={ m.title } description={'Testing'} location={m.location}/><br /><br />
+                      <AddToCalendar dateTime={ [2023, 3, 19, Number(convertTime12to24(time12h)[0]),Number(convertTime12to24(time12h)[1])] } title={ m.title } description={'Testing'} location={m.location}/><br />
+                      <span className='add-cal-info'><em>Note: iOS does not currently support this functionality. If on iOS, please use computer to import which will sync to your phone</em></span><br /><br />
                       <strong>Type: </strong><br />{ m.type }<br /><br />
                       <strong>Format: </strong><br />{ m.format }<br /><br />
                       <strong>Method: </strong><br />{ m.method }<br /><br />
