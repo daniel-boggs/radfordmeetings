@@ -1,13 +1,8 @@
 import Accordion from 'react-bootstrap/Accordion';
 import './index.scss';
-import { BsCalendarWeek } from 'react-icons/bs'
 import AddToCalendar from '../addToCalendar';
 
-import { meetings } from '../../configs/meetings'
-import { defaultDayOfWeek } from '../../utils/dayOfTheWeek';
-
-
-function MeetingDetail({ meetings }) {
+function MeetingDetail({tab, allMeetings, meetings }) {
   let zoomLink = (url) => {
     if (url !== 'N/A') {
       return (
@@ -23,7 +18,16 @@ function MeetingDetail({ meetings }) {
     );
   }
 
-  if (meetings.length > 0) {
+  let selectedMeetings;
+
+  if (tab === 'all') {
+
+    selectedMeetings = allMeetings;
+  } else {
+    selectedMeetings = meetings;
+  }
+
+  if (selectedMeetings.length > 0) {
     return (
       <div>
         <p className='meeting-count'>Total: { meetings.length } Meetings</p>

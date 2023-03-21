@@ -10,6 +10,7 @@ import { meetings } from '../../configs/meetings';
 const Meetings = () => {
     const [searchField, setSearchField] = useState('');
     const [data, setData] = useState('');
+    const [method, setMethod] = useState('');
     const [filteredMeetings, setFilteredMeetings] = useState(meetings);
 
     const d = new Date();
@@ -37,18 +38,26 @@ const Meetings = () => {
     //allow the ability for visiotrs to bookmark specific days
     const hash = window.location.hash.substring(1);
     const defaultDayOfWeek = hash ? hash : dayOfWeek;
+
     const selectedTab = (eventKey) => {
-        setData(eventKey);
+            setData(eventKey);
+    }
+
+    const selectedMethod = (eventKey) => {
+        setMethod(eventKey);
     }
 
     useEffect(() => {
         const newFilteredMeetings = meetings
         .filter((meeting) => {
-          return (meeting.day.toLowerCase().search((hash ? hash : dayOfWeek).toLowerCase()) !== -1) && (meeting.title.toLowerCase().includes(searchField));
+
+          return (meeting.day.toLowerCase().search((data ? (data !== 'all' ? data : '' ) : dayOfWeek).toLowerCase()) !== -1) &&
+                 (meeting.method.toLowerCase().search(method.toLowerCase()) !== -1) &&
+                 (meeting.title.toLowerCase().includes(searchField));
         });
     
         setFilteredMeetings(newFilteredMeetings);
-      }, [data, hash, dayOfWeek, searchField]);
+      }, [data, hash, dayOfWeek, method, searchField]);
 
     const onSearchChange = (event) => {
         setSearchField(event.target.value.toLowerCase());
@@ -86,18 +95,18 @@ const Meetings = () => {
             </Nav>
             <br/>
             <label>Method</label>
-            <Nav className='meetings-nav meetings-methods' fill variant="tabs" defaultActiveKey="link-4">
+            <Nav className='meetings-nav meetings-methods' fill variant="tabs" defaultActiveKey="all">
                 <Nav.Item>
-                    <Nav.Link eventKey="link-1">Hybrid</Nav.Link>
+                    <Nav.Link eventKey="hybrid" onClick={event => {selectedMethod('Hybrid')}}>Hybrid</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="link-2">In Person</Nav.Link>
+                    <Nav.Link eventKey="in-person" onClick={event => {selectedMethod('In Person')}}>In Person</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="link-3">Online</Nav.Link>
+                    <Nav.Link eventKey="online" onClick={event => {selectedMethod('Online')}}>Online</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="link-4">All</Nav.Link>
+                    <Nav.Link eventKey="all" onClick={event => {selectedMethod('')}}>All</Nav.Link>
                 </Nav.Item>
             </Nav>
             <div className="search-meetings-wrapper">
@@ -115,7 +124,7 @@ const Meetings = () => {
         </div>
             </div>
             <br />
-            <MeetingDetail selectedTab={ data } searchString={ filteredMeetings } meetings={ filteredMeetings }/>    
+            <MeetingDetail tab={ data } allMeetings={ meetings } meetings={ filteredMeetings }/>    
         </div>
     );
 }

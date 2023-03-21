@@ -22,7 +22,7 @@ const NavBar = () => {
                 <Link to="/meetings">MEETING LIST</Link>
             </Nav.Link>
             <Nav.Link eventKey={2} href="javascript:void(0);">
-              <Link to="/settings">SETTINGS</Link>
+              <Link to="/settings"></Link>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

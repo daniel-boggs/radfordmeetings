@@ -24,7 +24,6 @@ function defaultDayOfWeek() {
     //allow the ability for visiotrs to bookmark specific days
     const hash = window.location.hash.substring(1);
     defaultDayOfWeek = hash ? hash : dayOfWeek;
-    console.log('Hash: ' + hash);
 
     return defaultDayOfWeek;
 }
