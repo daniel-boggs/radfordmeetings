@@ -69,28 +69,28 @@ const Meetings = () => {
             <label>Day of Week</label>
             <Nav className="meetings-nav meetings-days" fill variant="tabs" defaultActiveKey={ defaultDayOfWeek }>
                 <Nav.Item>
-                    <Nav.Link href="#monday" eventKey="monday" onClick={() => {selectedTab('monday')}}>MON</Nav.Link>
+                    <Nav.Link eventKey="monday" onClick={() => {selectedTab('monday')}}>MON</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link href="#tuesday" eventKey="tuesday" onClick={event => {selectedTab('tuesday')}}>TUE</Nav.Link>
+                    <Nav.Link eventKey="tuesday" onClick={event => {selectedTab('tuesday')}}>TUE</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link href="#wednesday" eventKey="wednesday" onClick={event => {selectedTab('wednesday')}}>WED</Nav.Link>
+                    <Nav.Link eventKey="wednesday" onClick={event => {selectedTab('wednesday')}}>WED</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link href="#thursday" eventKey="thursday" onClick={event => {selectedTab('thursday')}}>THU</Nav.Link>
+                    <Nav.Link eventKey="thursday" onClick={event => {selectedTab('thursday')}}>THU</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link href="#friday" eventKey="friday" onClick={event => {selectedTab('friday')}}>FRI</Nav.Link>
+                    <Nav.Link eventKey="friday" onClick={event => {selectedTab('friday')}}>FRI</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link href="#saturday" eventKey="saturday" onClick={event => {selectedTab('saturday')}}>SAT</Nav.Link>
+                    <Nav.Link eventKey="saturday" onClick={event => {selectedTab('saturday')}}>SAT</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link href="#sunday" eventKey="sunday" onClick={event => {selectedTab('sunday')}}>SUN</Nav.Link>
+                    <Nav.Link eventKey="sunday" onClick={event => {selectedTab('sunday')}}>SUN</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link href="#all" eventKey="all" onClick={event => {selectedTab('all')}}>ALL</Nav.Link>
+                    <Nav.Link eventKey="all" onClick={event => {selectedTab('all')}}>ALL</Nav.Link>
                 </Nav.Item>
             </Nav>
             <br/>

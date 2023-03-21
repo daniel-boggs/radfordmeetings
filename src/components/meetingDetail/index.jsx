@@ -1,6 +1,7 @@
 import Accordion from 'react-bootstrap/Accordion';
 import './index.scss';
 import AddToCalendar from '../addToCalendar';
+import { AddToCalendarButton } from 'add-to-calendar-button-react';
 
 function MeetingDetail({tab, allMeetings, meetings }) {
   let zoomLink = (url) => {
@@ -34,6 +35,31 @@ function MeetingDetail({tab, allMeetings, meetings }) {
         <Accordion defaultActiveKey="">
           {
             meetings.map((m) => {
+              var getNextDay = function (dayName) {
+
+                // The current day
+                var date = new Date();
+                var now = date.getDay();
+              
+                // Days of the week
+                var days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+              
+                // The index for the day you want
+                var day = days.indexOf(dayName.toLowerCase());
+              
+                // Find the difference between the current day and the one you want
+                // If it's the same day as today (or a negative number), jump to the next week
+                var diff = day - now;
+                diff = diff < 1 ? 7 + diff : diff;
+              
+                // Get the timestamp for the desired day
+                var nextDayTimestamp = date.getTime() + (1000 * 60 * 60 * 24 * diff);
+              
+                // Get the next day
+                return new Date(nextDayTimestamp);
+              
+              };
+
               let time12h = m.timePT;
               
               const convertTime12to24 = (time12h) => {
@@ -48,18 +74,66 @@ function MeetingDetail({tab, allMeetings, meetings }) {
                 if (modifier === 'PM') {
                   hours = parseInt(hours, 10) + 12;
                 }
+
+                if (hours.length < 2) {
+                  hours = '0'.toString() + hours
+                }
             
                 return [hours, minutes];
               }
+
+              const convertTime12to24End = (time12h) => {
+                const [time, modifier] = time12h.split(' ');
+
+                let [hours, minutes] = time.split(':');
+          
+                if (hours === '12') {
+                  hours = '00';
+                }
+
+                if (modifier === 'PM') {
+                  hours = parseInt(hours, 10) + 12;
+                }
+
+                hours = (Number(hours) + 1).toString();
+
+                if (hours.length < 2) {
+                  hours = '0'.toString() + hours
+                }
+            
+                return [hours, minutes];
+              }
+
+              const startTime = convertTime12to24(time12h)[0] + ':' + convertTime12to24(time12h)[1];
+              const endTime = convertTime12to24End(time12h)[0] + ':' + convertTime12to24(time12h)[1];
+
               //TO DO: Create Cal Description and add in  Location info to ICS
+              //<AddToCalendar dateTime={ [2023, 3, 19, Number(convertTime12to24(time12h)[0]),Number(convertTime12to24(time12h)[1])] } title={ m.title } description={'Testing'} location={m.location}/><br />
               return(
                 <Accordion.Item eventKey={m.id}>
                   <Accordion.Header><span><strong>{m.day.charAt(0).toUpperCase()+ m.day.slice(1) + ' ' + m.timePT}</strong></span><span>{m.title + ' (' + m.method + ')' }</span></Accordion.Header>
                   <Accordion.Body>
                     <container>
                       <strong>Date/Time: </strong><br />{ m.day.charAt(0).toUpperCase()+ m.day.slice(1) + ' ' + m.timePT }<br />
-                      <AddToCalendar dateTime={ [2023, 3, 19, Number(convertTime12to24(time12h)[0]),Number(convertTime12to24(time12h)[1])] } title={ m.title } description={'Testing'} location={m.location}/><br />
-                      <span className='add-cal-info'><em>Note: iOS does not currently support this functionality. If on iOS, please use computer to import which will sync to your phone</em></span><br /><br />
+                      
+                      
+                      <AddToCalendarButton
+                      name={m.title}
+                      description='Testing for Now'
+                      options={['Apple','Google','iCal']}
+                      location={m.physicalLocation}
+                      startDate="2023-03-19"
+                      endDate="2023-03-19"
+                      recurrence="weekly"
+                      startTime={startTime}
+                      endTime={endTime}
+                      timeZone="America/Los_Angeles"
+                      buttonStyle='text'
+                      size='2'
+                      hideBranding='true'
+                      ></AddToCalendarButton>
+                      <span className='add-cal-info'><em>If on iOS, please use Safari</em></span><br /><br />
+                      
                       <strong>Type: </strong><br />{ m.type }<br /><br />
                       <strong>Format: </strong><br />{ m.format }<br /><br />
                       <strong>Method: </strong><br />{ m.method }<br /><br />
