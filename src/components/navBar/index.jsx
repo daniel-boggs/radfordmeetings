@@ -19,7 +19,7 @@ const NavBar = () => {
           </Nav>
           <Nav>
             <Nav.Link href="javascript:void(0);">
-                <Link to="/meetings">MEETING LIST</Link>
+                <Link to="/">MEETING LIST</Link>
             </Nav.Link>
             <Nav.Link eventKey={2} href="javascript:void(0);">
               <Link to="/settings"></Link>
