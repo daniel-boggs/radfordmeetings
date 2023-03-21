@@ -115,8 +115,6 @@ function MeetingDetail({tab, allMeetings, meetings }) {
                   <Accordion.Body>
                     <container>
                       <strong>Date/Time: </strong><br />{ m.day.charAt(0).toUpperCase()+ m.day.slice(1) + ' ' + m.timePT }<br />
-                      
-                      
                       <AddToCalendarButton
                       name={m.title}
                       description='Testing for Now'
@@ -132,7 +130,7 @@ function MeetingDetail({tab, allMeetings, meetings }) {
                       size='2'
                       hideBranding='true'
                       ></AddToCalendarButton>
-                      <span className='add-cal-info'><em>If on iOS, please use Safari</em></span><br /><br />
+                      <span className='add-cal-info'><em>**If on iOS, please use Safari to add to Calendar</em></span><br /><br />
                       
                       <strong>Type: </strong><br />{ m.type }<br /><br />
                       <strong>Format: </strong><br />{ m.format }<br /><br />
