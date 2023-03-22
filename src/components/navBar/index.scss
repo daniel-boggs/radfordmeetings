@@ -3,6 +3,8 @@ nav.bg-dark {
 }
 
 nav {
+    filter: drop-shadow(0px -9px 13px black);
+
     .navbar-brand a {
         color: #e2e1e1;
         text-decoration: none;
@@ -15,4 +17,6 @@ nav {
         text-decoration: none;
         color: #000
     }
+
+
 }

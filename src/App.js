@@ -13,6 +13,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      <div className="hero-image">
+      </div>
       <NavBar />
       <div id="page-container" className="body-content">
       <div id="content-wrap">
