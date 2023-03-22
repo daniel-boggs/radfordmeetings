@@ -14,12 +14,15 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <div className="body-content">
+      <div id="page-container" className="body-content">
+      <div id="content-wrap">
         <Routes>
           <Route path="/" element={ <Meetings /> } />
           <Route path="meetings" element={ <Meetings /> } />
           <Route path="*" element={ <NotFound /> } />
         </Routes>
+        </div>
+        <footer id="footer">This site was built by a fellow alcoholic and is not affiliated with AA or Radford Hall</footer>
       </div>
     </div>
   );
