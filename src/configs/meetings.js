@@ -1023,7 +1023,7 @@ export const meetings = [
         title: 'MA Radford High Hopes',
         type: 'MA',
         format: 'Speaker/Participation',
-        method: 'Speaker',
+        method: 'Hybrid',
         physicalLocation: '4849 Van Nuys Blvd suite 103 Sherman Oaks - Serenity Room',
         zoom: 'https://us02web.zoom.us/j/86040064528?pwd=WHFFYm14bVB1RnJpMjBQc1VDSkx6UT09',
         zoomID: '860 4006 4528',
