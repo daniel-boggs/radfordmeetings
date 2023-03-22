@@ -22,7 +22,7 @@ function App() {
           <Route path="*" element={ <NotFound /> } />
         </Routes>
         </div>
-        <footer id="footer">This site was built by a fellow alcoholic and is not affiliated with AA or Radford Hall</footer>
+        <footer id="footer">This site was built by a fellow and is not affiliated with AA or Radford Hall</footer>
       </div>
     </div>
   );

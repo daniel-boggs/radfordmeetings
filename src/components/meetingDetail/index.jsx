@@ -157,7 +157,7 @@ function MeetingDetail({tab, allMeetings, meetings }) {
                       endTime={endTime}
                       timeZone="America/Los_Angeles"
                       buttonStyle='text'
-                      size='2'
+                      size='0'
                       hideBranding='true'
                       ></AddToCalendarButton><br />
                       <strong>Type: </strong><br />{ m.type }<br /><br />

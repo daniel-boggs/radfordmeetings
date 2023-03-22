@@ -56,6 +56,10 @@ p.meeting-count {
     margin-bottom: 8px;
 }
 
+.atcb-button-wrapper,button#atcb-btn-1,.atcb-button {
+    padding: 0!important;
+}
+
 @media only screen and (max-width: 768px) {
     button.accordion-button {
         font-size: 12px;
