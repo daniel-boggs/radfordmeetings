@@ -148,7 +148,7 @@ function MeetingDetail({tab, allMeetings, meetings }) {
                       <AddToCalendarButton
                       name={m.title}
                       description={meetingDescription}
-                      options={['Apple','Google','iCal']}
+                      options={['Google',]}
                       location={m.physicalLocation}
                       startDate={meetingDate}
                       endDate={meetingDate}
