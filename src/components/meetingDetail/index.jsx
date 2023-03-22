@@ -85,8 +85,6 @@ function MeetingDetail({tab, allMeetings, meetings }) {
 
                 hours = Number(hours) + 3;
 
-                console.log(hours)
-
                 modifier = hours >= 12 ? 'PM' : 'AM';
 
                 if (hours >= 12 && hours <= 23) {
@@ -182,7 +180,7 @@ function MeetingDetail({tab, allMeetings, meetings }) {
                   <Accordion.Header><span><strong>{m.day.charAt(0).toUpperCase()+ m.day.slice(1) + ' '} <br/> { m.timePT} <br /> { convertTimePTToET(m.timePT) }</strong></span><span>{m.title + ' (' + m.method + ')' }</span></Accordion.Header>
                   <Accordion.Body>
                     <container>
-                      <strong>Date/Time: </strong><br />{ m.day.charAt(0).toUpperCase()+ m.day.slice(1) + ' ' + m.timePT }<br />
+                      <strong>Date/Time: </strong><br />{ m.day.charAt(0).toUpperCase()+ m.day.slice(1) + ' ' + m.timePT + ' / ' +  convertTimePTToET(m.timePT) }<br />
                       <AddToCalendarButton
                       name={m.title}
                       description={meetingDescription}
