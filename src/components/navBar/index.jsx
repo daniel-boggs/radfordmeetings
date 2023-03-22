@@ -22,7 +22,7 @@ const NavBar = () => {
                 <Link to="/">MEETING LIST</Link>
             </Nav.Link>
             <Nav.Link eventKey={2} href="javascript:void(0);">
-              <Link to="/settings"></Link>
+              <Link target={'_blank'} to="https://radfordonline.com">OFFICIAL RADFORD</Link>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
