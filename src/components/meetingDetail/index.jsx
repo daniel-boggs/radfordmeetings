@@ -35,14 +35,14 @@ function MeetingDetail({tab, allMeetings, meetings }) {
         <Accordion defaultActiveKey="">
           {
             meetings.map((m) => {
-              var getNextDay = function (dayName) {
+              var getMeetingDate = function (dayName) {
 
                 // The current day
                 var date = new Date();
                 var now = date.getDay();
               
                 // Days of the week
-                var days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+                var days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
               
                 // The index for the day you want
                 var day = days.indexOf(dayName.toLowerCase());
@@ -50,15 +50,17 @@ function MeetingDetail({tab, allMeetings, meetings }) {
                 // Find the difference between the current day and the one you want
                 // If it's the same day as today (or a negative number), jump to the next week
                 var diff = day - now;
-                diff = diff < 1 ? 7 + diff : diff;
+                //diff = diff < 1 ? 7 + diff : diff;
               
                 // Get the timestamp for the desired day
                 var nextDayTimestamp = date.getTime() + (1000 * 60 * 60 * 24 * diff);
               
                 // Get the next day
-                return new Date(nextDayTimestamp);
+                return new Date(nextDayTimestamp).toISOString().slice(0,10);;
               
               };
+
+              console.log(getMeetingDate(m.day));
 
               let time12h = m.timePT;
               
@@ -104,8 +106,36 @@ function MeetingDetail({tab, allMeetings, meetings }) {
                 return [hours, minutes];
               }
 
+              const meetingDate = getMeetingDate(m.day);
               const startTime = convertTime12to24(time12h)[0] + ':' + convertTime12to24(time12h)[1];
               const endTime = convertTime12to24End(time12h)[0] + ':' + convertTime12to24(time12h)[1];
+
+              const buildDescription = (name, type, format, method, location, zoomLink, zoomId, zoomPW, contact, note) => {
+                return (
+                  ('Name\n' + 
+                  name + '\n\n' +
+                  'Type\n' + 
+                  type + '\n\n' +
+                  'Format\n' + 
+                  format + '\n\n' +
+                  'Method\n' + 
+                  method + '\n\n' +
+                  'Location\n' + 
+                  location + '\n\n' +
+                  'Zoom Link\n' + 
+                  zoomLink + '\n\n' +
+                  'Zoom Id\n' + 
+                  zoomId + '\n\n' +
+                  'Zoom PW\n' + 
+                  zoomPW + '\n\n' +
+                  'Contact\n' + 
+                  contact + '\n\n' +
+                  'Note\n' + 
+                  note).replace(':','')
+                )
+              }
+
+              const meetingDescription = buildDescription(m.title, m.type, m.format, m.method, m.physicalLocation, m.zoom, m.zoomID, m.zoomPW, m.contactName, m.note);
 
               //TO DO: Create Cal Description and add in  Location info to ICS
               //<AddToCalendar dateTime={ [2023, 3, 19, Number(convertTime12to24(time12h)[0]),Number(convertTime12to24(time12h)[1])] } title={ m.title } description={'Testing'} location={m.location}/><br />
@@ -117,11 +147,11 @@ function MeetingDetail({tab, allMeetings, meetings }) {
                       <strong>Date/Time: </strong><br />{ m.day.charAt(0).toUpperCase()+ m.day.slice(1) + ' ' + m.timePT }<br />
                       <AddToCalendarButton
                       name={m.title}
-                      description='Testing for Now'
+                      description={meetingDescription}
                       options={['Apple','Google','iCal']}
                       location={m.physicalLocation}
-                      startDate="2023-03-19"
-                      endDate="2023-03-19"
+                      startDate={meetingDate}
+                      endDate={meetingDate}
                       recurrence="weekly"
                       startTime={startTime}
                       endTime={endTime}
