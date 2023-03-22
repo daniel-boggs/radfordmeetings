@@ -60,9 +60,47 @@ function MeetingDetail({tab, allMeetings, meetings }) {
               
               };
 
-              console.log(getMeetingDate(m.day));
-
               let time12h = m.timePT;
+
+              const convertTimePTToET = (time12h) => {
+                let [time, modifier] = time12h.split(' ');
+
+                let [hours, minutes] = time.split(':');
+
+                //hours = hours + 3;
+          
+                if (hours === '12') {
+                  hours = '00';
+                }
+
+                if (modifier === 'PM') {
+                  hours = parseInt(hours, 10) + 12;
+                }
+
+                hours = parseInt(hours, 10);
+
+                if (hours.length < 2) {
+                  hours = '0'.toString() + hours
+                }
+
+                hours = Number(hours) + 3;
+
+                console.log(hours)
+
+                modifier = hours >= 12 ? 'PM' : 'AM';
+
+                if (hours >= 12 && hours <= 23) {
+                  modifier = 'PM';
+                } else {
+                  modifier = 'AM';
+                }
+
+                hours = (hours % 12) || 12;
+            
+                return hours + ':' + minutes + ' ' + modifier + ' ET';
+              }
+
+              let mTimePT = convertTimePTToET(m.timePT);
               
               const convertTime12to24 = (time12h) => {
                 const [time, modifier] = time12h.split(' ');
@@ -141,7 +179,7 @@ function MeetingDetail({tab, allMeetings, meetings }) {
               //<AddToCalendar dateTime={ [2023, 3, 19, Number(convertTime12to24(time12h)[0]),Number(convertTime12to24(time12h)[1])] } title={ m.title } description={'Testing'} location={m.location}/><br />
               return(
                 <Accordion.Item eventKey={m.id}>
-                  <Accordion.Header><span><strong>{m.day.charAt(0).toUpperCase()+ m.day.slice(1) + ' '} <br/> { m.timePT}</strong></span><span>{m.title + ' (' + m.method + ')' }</span></Accordion.Header>
+                  <Accordion.Header><span><strong>{m.day.charAt(0).toUpperCase()+ m.day.slice(1) + ' '} <br/> { m.timePT} <br /> { convertTimePTToET(m.timePT) }</strong></span><span>{m.title + ' (' + m.method + ')' }</span></Accordion.Header>
                   <Accordion.Body>
                     <container>
                       <strong>Date/Time: </strong><br />{ m.day.charAt(0).toUpperCase()+ m.day.slice(1) + ' ' + m.timePT }<br />
