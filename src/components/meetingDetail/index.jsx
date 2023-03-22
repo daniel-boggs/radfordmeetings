@@ -31,7 +31,7 @@ function MeetingDetail({tab, allMeetings, meetings }) {
   if (selectedMeetings.length > 0) {
     return (
       <div>
-        <p className='meeting-count'>Total: { meetings.length } Meetings</p>
+        <p className='meeting-count'>Results: { meetings.length } Found</p>
         <Accordion defaultActiveKey="">
           {
             meetings.map((m) => {

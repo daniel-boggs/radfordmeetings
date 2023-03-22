@@ -22,6 +22,7 @@
 
     input {
         font-size: 0.8em;
+        margin-top: 8px;
     }
 
     form {
@@ -97,6 +98,10 @@
 @media only screen and (max-width: 768px) {
     .nav-item {
         margin: 8px;
+
+        .nav-link {
+            font-size: 10px;
+        }
     }
 
     .row.meeting-filters-panel label {
@@ -109,5 +114,13 @@
 
     span.navbar-toggler-icon {
         margin: 0;
+    }
+
+    .search-meetings-wrapper {
+        font-size: 10px;
+    }
+
+    .row.meeting-filters-panel label {
+        font-size: 11px;
     }
 }
