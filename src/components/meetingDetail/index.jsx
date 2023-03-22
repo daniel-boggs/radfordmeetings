@@ -159,9 +159,7 @@ function MeetingDetail({tab, allMeetings, meetings }) {
                       buttonStyle='text'
                       size='2'
                       hideBranding='true'
-                      ></AddToCalendarButton>
-                      <span className='add-cal-info'><em>**If on iOS, please use Safari to add to Calendar</em></span><br /><br />
-                      
+                      ></AddToCalendarButton><br />
                       <strong>Type: </strong><br />{ m.type }<br /><br />
                       <strong>Format: </strong><br />{ m.format }<br /><br />
                       <strong>Method: </strong><br />{ m.method }<br /><br />
