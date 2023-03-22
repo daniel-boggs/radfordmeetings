@@ -30,7 +30,7 @@ export const meetings = [
         zoomID: '878 8739 7285',
         zoomPW: '314887',
         contactName: '',
-        note: ''
+        note: 'Adult Children of Alcoholics Focus'
     },
     {
         id: 3,
@@ -59,7 +59,7 @@ export const meetings = [
         method: 'Online',
         physicalLocation: 'N/A',
         zoom: 'https://us02web.zoom.us/j/82633330760?pwd=alpvUUdlbXhpaUZydWs5Z1Q0Zjlqdz09',
-        zoomID: '283 595 3698',
+        zoomID: '826 3333 0760',
         zoomPW: 'Literature',
         contactName: 'Melissa H.',
         note: ''
@@ -85,7 +85,7 @@ export const meetings = [
         visible: true,
         day: 'Monday',
         timePT: '1:30 PM PT',
-        title: 'Zaddies & Addies: A safe space for LGBTQIA2S+ and allies to recover',
+        title: 'Zaddies & Addies',
         type: 'AA',
         format: 'Literature/Speaker/Participation',
         method: 'Online',
@@ -94,7 +94,7 @@ export const meetings = [
         zoomID: '389 335 7431',
         zoomPW: 'Sober2021',
         contactName: 'Unknown',
-        note: ''
+        note: 'A safe space for LGBTQIA2S+ and allies to recover'
     },
     {
         id: 7,
@@ -280,7 +280,7 @@ export const meetings = [
         day: 'Tuesday',
         timePT: '3:00 PM PT',
         title: 'Inside Issues: A Safe Place for the Dual Diagnosed Alcoholic',
-        type: 'Dual Diagnosis',
+        type: 'AA/Dual Diagnosis',
         format: 'Speaker/Participation',
         method: 'Hybrid',
         physicalLocation: '4849 Van Nuys Blvd suite 103 Sherman Oaks - Radford Room',
@@ -351,7 +351,7 @@ export const meetings = [
         zoom: 'https://us06web.zoom.us/j/9959012824?pwd=ZUo0anJ4VEhFd0ZHdG1wNCticER2UT09',
         zoomID: '995 901 2824',
         zoomPW: '139431',
-        contactName: 'Unknown',
+        contactName: 'N/A',
         note: ''
     },
     {
@@ -523,7 +523,7 @@ export const meetings = [
         timePT: '3:00 PM PT',
         title: 'Living the Design',
         type: 'AA',
-        format: 'Speaker/Participation',
+        format: 'Unknown',
         method: 'In Person',
         physicalLocation: '4849 Van Nuys Blvd suite 103 Sherman Oaks - Serenity Room',
         zoom: 'N/A',
@@ -562,7 +562,7 @@ export const meetings = [
         zoomID: '875 7747 4505',
         zoomPW: 'N/A',
         contactName: 'Krystle & Kristen M.',
-        note: ''
+        note: 'Earbuds/Headphones Recommended'
     },
     {
         id: 36,
@@ -585,7 +585,7 @@ export const meetings = [
         visible: true,
         day: 'Wednesday',
         timePT: '6:00 PM PT',
-        title: 'Tens Only: A Tenth Step Meeting',
+        title: 'Tens Only',
         type: 'AA',
         format: 'Unknown',
         method: 'In Person',
@@ -594,7 +594,7 @@ export const meetings = [
         zoomID: 'N/A',
         zoomPW: 'N/A',
         contactName: 'Marion',
-        note: ''
+        note: 'A Tenth Step Meeting'
     },
     {
         id: 38,
@@ -672,7 +672,7 @@ export const meetings = [
         zoom: 'https://us06web.zoom.us/j/83707184774?pwd=RkVkVWVGTEdDN1puNGYzNC9FODBGQT09',
         zoomID: '837 0718 4774',
         zoomPW: '587953',
-        contactName: 'Andy L',
+        contactName: 'Andy L.',
         note: 'Live/Hybrid 1st Wednesday of the month (4849 Van Nuys Blvd suite 103 Sherman Oaks - Serenity Room), otherwise Online Only'
     },
     {
@@ -707,7 +707,7 @@ export const meetings = [
         zoomID: '893 3178 6908',
         zoomPW: 'N/A',
         contactName: 'Unknown',
-        note: ''
+        note: 'Open / General / Automated Live Closed Captioning'
     },
     {
         id: 45,
@@ -752,8 +752,8 @@ export const meetings = [
         method: 'Online',
         physicalLocation: 'N/A',
         zoom: 'https://us02web.zoom.us/j/7667090526?pwd=MlVwbEFscU9CRmU1aFIyREcxZVV3UT09',
-        zoomID: '019289',
-        zoomPW: 'N/A',
+        zoomID: '766 709 0526',
+        zoomPW: '019289',
         contactName: 'Brianna',
         note: ''
     },
@@ -787,7 +787,7 @@ export const meetings = [
         zoomID: '389 335 7431',
         zoomPW: 'Sober2021',
         contactName: 'Mikie C. & Julie',
-        note: ''
+        note: 'A safe space for LGBTQIA2S+ and allies to recover'
     },
     {
         id: 50,
@@ -819,7 +819,7 @@ export const meetings = [
         zoomID: '830 5648 5054',
         zoomPW: '675244',
         contactName: 'Maurice',
-        note: ''
+        note: '45-minute AA Speaker following w/ participation'
     },
     {
         id: 52,
@@ -834,7 +834,7 @@ export const meetings = [
         zoom: 'https://us04web.zoom.us/j/2835953698?pwd=V1NDdXU0OUFJcjUxZjVoWENKMStRZz09',
         zoomID: '283 595 3698',
         zoomPW: 'Zombies',
-        contactName: 'Paul V',
+        contactName: 'Paul V.',
         note: ''
     },
     {
@@ -883,7 +883,7 @@ export const meetings = [
         zoomID: '872 0528 1971',
         zoomPW: 'PBPBBS',
         contactName: 'Quincy',
-        note: ''
+        note: 'Bring your big book and a highlighter with you!'
     },
     {
         id: 56,
@@ -924,7 +924,7 @@ export const meetings = [
         visible: true,
         day: 'Friday',
         timePT: '8:15 AM PT',
-        title: '4th Step Study (Alanon)',
+        title: '4th Step Study: Al-Anon',
         type: 'Al-Anon',
         format: 'Unknown',
         method: 'Hybrid',
@@ -974,14 +974,14 @@ export const meetings = [
         timePT: '12:00 PM PT',
         title: 'Aloha Friday Step Study',
         type: 'AA',
-        format: 'Participation',
+        format: 'Speaker/Participation',
         method: 'Online',
         physicalLocation: 'N/A',
         zoom: 'https://us02web.zoom.us/j/82949212314?pwd=aGhnYzZHWm5Xem5samIrd2VQa2o2QT09',
         zoomID: '829 4921 2314',
         zoomPW: 'aloha',
         contactName: 'Brendan',
-        note: '\'The Pacific Connection\''
+        note: '\'The Pacific Connection\' - 10AM Hawaii Time'
     },
     {
         id: 62,
@@ -1004,7 +1004,7 @@ export const meetings = [
         visible: true,
         day: 'Friday',
         timePT: '3:00 PM PT',
-        title: 'AABUNDANCE (An AA Mtg Focused on Abundance)',
+        title: 'AABUNDANCE: An AA Mtg Focused on Abundance',
         type: 'AA',
         format: 'Speaker/Participation',
         method: 'Hybrid',
@@ -1012,7 +1012,7 @@ export const meetings = [
         zoom: 'https://us05web.zoom.us/j/83056485054?pwd=TjZYeVd1Y1NaNzJEdUZhdUIyRmZ2Zz09',
         zoomID: '830 5648 5054',
         zoomPW: '675244',
-        contactName: 'Vikki from Manchester and Heather L.',
+        contactName: '☆Vikki☆ from Manchester and Heather L.',
         note: ''
     },
     {
@@ -1022,7 +1022,7 @@ export const meetings = [
         timePT: '5:15 PM PT',
         title: 'MA Radford High Hopes',
         type: 'MA',
-        format: 'Speaker/Participation',
+        format: 'Speaker',
         method: 'Hybrid',
         physicalLocation: '4849 Van Nuys Blvd suite 103 Sherman Oaks - Serenity Room',
         zoom: 'https://us02web.zoom.us/j/86040064528?pwd=WHFFYm14bVB1RnJpMjBQc1VDSkx6UT09',
@@ -1081,22 +1081,6 @@ export const meetings = [
     },
     {
         id: 68,
-        visible: true,
-        day: 'Friday',
-        timePT: '8:00 PM PT',
-        title: 'Freaky Friday: AA Meeting Where It is safe to talk About It All!',
-        type: 'AA',
-        format: 'Speaker/Participation',
-        method: 'Hybrid',
-        physicalLocation: '4849 Van Nuys Blvd suite 103 Sherman Oaks - Radford Room',
-        zoom: 'https://us04web.zoom.us/j/2835953698?pwd=V1NDdXU0OUFJcjUxZjVoWENKMStRZz09',
-        zoomID: '283 595 3698',
-        zoomPW: 'Zombies',
-        contactName: 'Momo',
-        note: ''
-    },
-    {
-        id: 69,
         visible: true,
         day: 'Friday',
         timePT: '8:00 PM PT',
@@ -1198,7 +1182,7 @@ export const meetings = [
         visible: true,
         day: 'Saturday',
         timePT: '10:30 AM PT',
-        title: 'Saturday Morning Alanon Live and Let Live',
+        title: 'Saturday Morning Al-Anon Live and Let Live',
         type: 'Al-Anon',
         format: 'Speaker/Participation',
         method: 'Hybrid',
@@ -1326,7 +1310,7 @@ export const meetings = [
         visible: true,
         day: 'Saturday',
         timePT: '4:00 PM PT',
-        title: 'Good Grief (AA): A safe place to discuss grief and loss in sobriety (AA)',
+        title: 'Good Grief: A safe place to discuss grief and loss in sobriety',
         type: 'AA',
         format: 'Speaker/Participation',
         method: 'Online',
@@ -1374,7 +1358,7 @@ export const meetings = [
         visible: true,
         day: 'Saturday',
         timePT: '7:30 PM PT',
-        title: 'Solutions in Sobriety (LGBTQ)',
+        title: 'Solutions in Sobriety: LGBTQ',
         type: 'AA',
         format: 'Speaker',
         method: 'Hybrid',
@@ -1414,7 +1398,7 @@ export const meetings = [
         zoom: 'N/A',
         zoomID: 'N/A',
         zoomPW: 'N/A',
-        contactName: 'Unknown',
+        contactName: 'Jay L. & Maurice',
         note: 'An Epic Speaker Meeting'
     },
     {
@@ -1446,7 +1430,7 @@ export const meetings = [
         zoom: 'https://us04web.zoom.us/j/2835953698?pwd=V1NDdXU0OUFJcjUxZjVoWENKMStRZz09',
         zoomID: '283 595 3698',
         zoomPW: 'Zombies',
-        contactName: 'Moosh',
+        contactName: 'Melissa R.',
         note: ''
     },
 
@@ -1480,8 +1464,8 @@ export const meetings = [
         zoom: 'https://us04web.zoom.us/j/2835953698?pwd=V1NDdXU0OUFJcjUxZjVoWENKMStRZz09',
         zoomID: '283 595 3698',
         zoomPW: 'Zombies',
-        contactName: 'Ken M & JJ',
-        note: '(Earbuds/Headphones Recommended for Zoomers)'
+        contactName: 'Ken M. & JJ',
+        note: 'Earbuds/Headphones Recommended for Zoomers'
     },
     {
         id: 93,
@@ -1512,7 +1496,7 @@ export const meetings = [
         zoom: 'https://us02web.zoom.us/j/975027580?pwd=L3c5aVQwTlRJM2U2S2JJNEZDejFmQT09',
         zoomID: '975 027 580',
         zoomPW: 'N/A',
-        contactName: 'Mark or Rose',
+        contactName: 'Mark & Rosie',
         note: ''
     },
     {
@@ -1559,7 +1543,7 @@ export const meetings = [
         physicalLocation: 'N/A',
         zoom: 'https://us04web.zoom.us/j/2835953698?pwd=V1NDdXU0OUFJcjUxZjVoWENKMStRZz09',
         zoomID: '283 595 3698',
-        zoomPW: 'Zombiesl',
+        zoomPW: 'Zombies!',
         contactName: 'Cass',
         note: ''
     },
@@ -1656,7 +1640,7 @@ export const meetings = [
         zoom: 'https://us05web.zoom.us/j/8583733786?pwd=Y0Qvei9hUkNYTFhjNkdOalJ5UkhQdz09',
         zoomID: '858 373 3786',
         zoomPW: 'musicmeow',
-        contactName: 'Sean P.',
+        contactName: 'Sean',
         note: 'Expanding our comfort zones, even if you’ve never performed before. Five-minute shares can be Music, Poetry, Comedy, Karaoke, etc.'
     },
     {
@@ -1704,7 +1688,7 @@ export const meetings = [
         zoom: 'https://us02web.zoom.us/j/9116680204?pwd=VnBwQWI2UW8vRlRsVHFiNTJPbEJVUT09',
         zoomID: '911 668 0204',
         zoomPW: 'tolerance',
-        contactName: 'Unknown',
+        contactName: 'Nick J.',
         note: ''
     },
     {
@@ -1720,7 +1704,7 @@ export const meetings = [
         zoom: 'https://us04web.zoom.us/j/2835953698?pwd=V1NDdXU0OUFJcjUxZjVoWENKMStRZz09',
         zoomID: '283 595 3698',
         zoomPW: 'Zombies',
-        contactName: 'Emily',
+        contactName: 'Erik C.',
         note: ''
     },
 ]
