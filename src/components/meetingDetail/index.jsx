@@ -112,25 +112,25 @@ function MeetingDetail({tab, allMeetings, meetings }) {
 
               const buildDescription = (name, type, format, method, location, zoomLink, zoomId, zoomPW, contact, note) => {
                 return (
-                  ('Name\n' + 
-                  name + '\n\n' +
-                  'Type\n' + 
-                  type + '\n\n' +
-                  'Format\n' + 
-                  format + '\n\n' +
-                  'Method\n' + 
-                  method + '\n\n' +
-                  'Location\n' + 
-                  location + '\n\n' +
-                  'Zoom Link\n' + 
-                  zoomLink + '\n\n' +
-                  'Zoom Id\n' + 
-                  zoomId + '\n\n' +
-                  'Zoom PW\n' + 
-                  zoomPW + '\n\n' +
-                  'Contact\n' + 
-                  contact + '\n\n' +
-                  'Note\n' + 
+                  ('[strong]Name[/strong][br]' + 
+                  name + '[br][br]' +
+                  '[strong]Type[/strong][br]' + 
+                  type + '[br][br]' +
+                  '[strong]Format[/strong][br]' + 
+                  format + '[br][br]' +
+                  '[strong]Method[/strong][br]' + 
+                  method + '[br][br]' +
+                  '[strong]Location[/strong][br]' + 
+                  location + '[br][br]' +
+                  '[strong]Zoom Link[/strong][br]' + 
+                  zoomLink + '[br][br]' +
+                  '[strong]Zoom Id[/strong][br]' + 
+                  zoomId + '[br][br]' +
+                  '[strong]Zoom PW[/strong][br]' + 
+                  zoomPW + '[br][br]' +
+                  '[strong]Contact[/strong][br]' + 
+                  contact + '[br][br]' +
+                  '[strong]Note[/strong][br]' + 
                   note).replace(':','')
                 )
               }
@@ -141,7 +141,7 @@ function MeetingDetail({tab, allMeetings, meetings }) {
               //<AddToCalendar dateTime={ [2023, 3, 19, Number(convertTime12to24(time12h)[0]),Number(convertTime12to24(time12h)[1])] } title={ m.title } description={'Testing'} location={m.location}/><br />
               return(
                 <Accordion.Item eventKey={m.id}>
-                  <Accordion.Header><span><strong>{m.day.charAt(0).toUpperCase()+ m.day.slice(1) + ' ' + m.timePT}</strong></span><span>{m.title + ' (' + m.method + ')' }</span></Accordion.Header>
+                  <Accordion.Header><span><strong>{m.day.charAt(0).toUpperCase()+ m.day.slice(1) + ' '} <br/> { m.timePT}</strong></span><span>{m.title + ' (' + m.method + ')' }</span></Accordion.Header>
                   <Accordion.Body>
                     <container>
                       <strong>Date/Time: </strong><br />{ m.day.charAt(0).toUpperCase()+ m.day.slice(1) + ' ' + m.timePT }<br />

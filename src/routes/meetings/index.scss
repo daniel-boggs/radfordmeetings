@@ -93,3 +93,21 @@
         display: block;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .nav-item {
+        margin: 8px;
+    }
+
+    .row.meeting-filters-panel label {
+        margin-top: 10px;
+    }
+
+    form.d-flex {
+        margin: 0px;
+    }
+
+    span.navbar-toggler-icon {
+        margin: 0;
+    }
+}
