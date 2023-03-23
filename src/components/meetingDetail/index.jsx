@@ -175,7 +175,7 @@ function MeetingDetail({tab, allMeetings, meetings }) {
               
               return(
                 <Accordion.Item eventKey={m.id}>
-                  <Accordion.Header><span><strong>{m.day.charAt(0).toUpperCase()+ m.day.slice(1) + ' '} <br/> { m.timePT} <br /> { convertTimePTToET(m.timePT) }</strong></span><span>{m.title + ' (' + m.method + ')' }</span></Accordion.Header>
+                  <Accordion.Header><span><strong>{m.day.charAt(0).toUpperCase()+ m.day.slice(1) + ' '} <br/> { m.timePT} <br /> { convertTimePTToET(m.timePT) }</strong></span><span>{m.title + ' [' + m.method + ']' }</span></Accordion.Header>
                   <Accordion.Body>
                     <container>
                       <strong>Date/Time: </strong><br />{ m.day.charAt(0).toUpperCase()+ m.day.slice(1) + ' ' + m.timePT + ' / ' +  convertTimePTToET(m.timePT) }<br />
