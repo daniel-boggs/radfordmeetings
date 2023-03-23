@@ -18,16 +18,7 @@ function MeetingDetail({tab, allMeetings, meetings }) {
     );
   }
 
-  let selectedMeetings;
-
-  if (tab === 'all') {
-
-    selectedMeetings = allMeetings;
-  } else {
-    selectedMeetings = meetings;
-  }
-
-  if (selectedMeetings.length > 0) {
+  if (meetings.length > 0) {
     return (
       <div>
         <p className='meeting-count'>Results: { meetings.length } Found</p>
@@ -48,15 +39,14 @@ function MeetingDetail({tab, allMeetings, meetings }) {
               
                 // Find the difference between the current day and the one you want
                 // If it's the same day as today (or a negative number), jump to the next week
-                var diff = day - now;
+                var diff = day - now + 1;
                 //diff = diff < 1 ? 7 + diff : diff;
               
                 // Get the timestamp for the desired day
                 var nextDayTimestamp = date.getTime() + (1000 * 60 * 60 * 24 * diff);
               
                 // Get the next day
-                return new Date(nextDayTimestamp).toISOString().slice(0,10);;
-              
+                return new Date(nextDayTimestamp).toISOString().slice(0,10);
               };
 
               let time12h = m.timePT;
@@ -144,6 +134,8 @@ function MeetingDetail({tab, allMeetings, meetings }) {
               const meetingDate = getMeetingDate(m.day);
               const startTime = convertTime12to24(time12h)[0] + ':' + convertTime12to24(time12h)[1];
               const endTime = convertTime12to24End(time12h)[0] + ':' + convertTime12to24(time12h)[1];
+
+              console.log(m.title + ': ' + m.day + ' ' + meetingDate);
 
               const buildDescription = (name, type, format, method, location, zoomLink, zoomId, zoomPW, contact, note) => {
                 return (
