@@ -6,7 +6,6 @@ import Meetings from "./routes/meetings"
 import Settings from "./routes/settings"
 import NotFound from "./routes/notFound"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Card from 'react-bootstrap/Card';
 
 import './App.css';
 

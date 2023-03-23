@@ -1,6 +1,5 @@
 import Accordion from 'react-bootstrap/Accordion';
 import './index.scss';
-import AddToCalendar from '../addToCalendar';
 import { AddToCalendarButton } from 'add-to-calendar-button-react';
 
 function MeetingDetail({tab, allMeetings, meetings }) {
@@ -173,8 +172,7 @@ function MeetingDetail({tab, allMeetings, meetings }) {
 
               const meetingDescription = buildDescription(m.title, m.type, m.format, m.method, m.physicalLocation, m.zoom, m.zoomID, m.zoomPW, m.contactName, m.note);
 
-              //TO DO: Create Cal Description and add in  Location info to ICS
-              //<AddToCalendar dateTime={ [2023, 3, 19, Number(convertTime12to24(time12h)[0]),Number(convertTime12to24(time12h)[1])] } title={ m.title } description={'Testing'} location={m.location}/><br />
+              
               return(
                 <Accordion.Item eventKey={m.id}>
                   <Accordion.Header><span><strong>{m.day.charAt(0).toUpperCase()+ m.day.slice(1) + ' '} <br/> { m.timePT} <br /> { convertTimePTToET(m.timePT) }</strong></span><span>{m.title + ' (' + m.method + ')' }</span></Accordion.Header>
