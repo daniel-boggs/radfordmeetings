@@ -11,8 +11,8 @@ function ScrollToTop() {
 
   function scrollFunction(mybutton) {
     if (
-      document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20
+      document.body.scrollTop > 100 ||
+      document.documentElement.scrollTop > 100
     ) {
       mybutton.style.display = "block";
     } else {

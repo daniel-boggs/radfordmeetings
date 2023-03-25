@@ -1,6 +1,7 @@
 import Accordion from 'react-bootstrap/Accordion';
 import './index.scss';
 import { AddToCalendarButton } from 'add-to-calendar-button-react';
+import $ from 'jquery'
 
 function MeetingDetail({tab, allMeetings, meetings }) {
   let zoomLink = (url) => {
@@ -163,10 +164,9 @@ function MeetingDetail({tab, allMeetings, meetings }) {
               }
 
               const meetingDescription = buildDescription(m.title, m.type, m.format, m.method, m.physicalLocation, m.zoom, m.zoomID, m.zoomPW, m.contactName, m.note);
-
               
               return(
-                <Accordion.Item eventKey={m.id}>
+                <Accordion.Item className='.meeting-item' eventKey={m.id}>
                   <Accordion.Header><span><strong>{m.day.charAt(0).toUpperCase()+ m.day.slice(1) + ' '} <br/> { m.timePT} <br /> { convertTimePTToET(m.timePT) }</strong></span><span>{m.title + ' [' + m.method + ']' }</span></Accordion.Header>
                   <Accordion.Body>
                     <container>

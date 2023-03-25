@@ -4,8 +4,17 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 import './index.scss'
+import $ from 'jquery'
 
 const NavBar = () => {
+  $(function () {
+    $(document).scroll(function () {
+      var $nav = $('.navbar');
+      var $hero = $('.hero-image')
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $hero.height());
+    });
+  });
+
   return (
     <div>
     <Navbar fixed='top' collapseOnSelect expand="lg" bg="light" variant="light">

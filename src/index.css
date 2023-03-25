@@ -12,6 +12,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Raleway', sans-serif !important;
+  background: linear-gradient(0deg, rgba(2,91,102,0.1825105042016807) 0%, rgba(255,255,255,1) 100%);
 }
 
 code {
