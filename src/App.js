@@ -6,6 +6,7 @@ import Meetings from "./routes/meetings"
 import Settings from "./routes/settings"
 import NotFound from "./routes/notFound"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ScrollToTop from "./components/ScrollToTop";
 
 import './App.css';
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="meetings" element={ <Meetings /> } />
           <Route path="*" element={ <NotFound /> } />
         </Routes>
+        <ScrollToTop />
         </div>
         <footer id="footer">This site was built by a fellow and is not affiliated with AA or Radford Hall</footer>
       </div>
