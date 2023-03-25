@@ -88,10 +88,10 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://radfordonline.com/wp-content/uploads/2022/10/RH_Sign_06_crop-1.jpg) !important;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 146px;
+    min-height: 180px;
     filter: drop-shadow(2px 0px 3px black);;
     background-position: 100% 34%;
-    margin-top: 50px;
+    margin-top: 0px;
   }
 }
 
