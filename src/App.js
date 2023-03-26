@@ -1,9 +1,7 @@
 import {Routes, Route} from "react-router-dom"
 import NavBar from "./components/navBar"
-import Home from "./routes/home"
-import About from "./routes/about"
 import Meetings from "./routes/meetings"
-import Settings from "./routes/settings"
+import Resources from "./routes/resources"
 import NotFound from "./routes/notFound"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ScrollToTop from "./components/ScrollToTop";
@@ -21,6 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={ <Meetings /> } />
           <Route path="meetings" element={ <Meetings /> } />
+          <Route path="resources" element={ <Resources /> } />
           <Route path="*" element={ <NotFound /> } />
         </Routes>
         <ScrollToTop />

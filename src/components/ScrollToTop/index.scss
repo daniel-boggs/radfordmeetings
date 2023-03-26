@@ -1,0 +1,21 @@
+#scrollToTop {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 30px; /* Place the button at the bottom of the page */
+    right: 20px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: transparent; /* Set a background color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    border-radius: 100px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+
+    svg {
+        color: #000;
+        background-color: #fff;
+        font-size: 40px;
+        border-radius: 100px;
+    }
+  }
+  

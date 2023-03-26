@@ -1,52 +1,32 @@
 import React from 'react';
-import { MDBBtn, MDBContainer, MDBIcon } from 'mdb-react-ui-kit';
+import './index.scss';
+import { BsArrowUpCircle } from 'react-icons/bs'
 
 function ScrollToTop() {
-  let mybutton;
-
-  window.onscroll = function () {
-    mybutton = document.getElementById("btn-back-to-top");
-    scrollFunction(mybutton);
+  window.onscroll = function() {
+    scrollFunction()
   };
 
-  function scrollFunction(mybutton) {
-    if (
-      document.body.scrollTop > 100 ||
-      document.documentElement.scrollTop > 100
-    ) {
-      mybutton.style.display = "block";
+  function scrollFunction() {
+    const scrollToTopButton = document.getElementById("scrollToTop");
+
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      scrollToTopButton.style.display = "block";
     } else {
-      mybutton.style.display = "none";
+      scrollToTopButton.style.display = "none";
     }
   }
 
-  function backToTop() {
+  const topFunction = () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
 
   return (
-    <MDBContainer fluid>
-
-      <MDBBtn
-        outline
-        onClick={backToTop}
-        id='btn-back-to-top'
-        style={{
-          position: "fixed",
-          bottom: "20px",
-          right: "20px",
-          display: "none",
-          background: "#fff",
-          zIndex: 1,
-        }}
-        className='btn-floating'
-        color='dark'
-        size='md'>
-        <MDBIcon fas icon="arrow-up" />
-      </MDBBtn>
-    </MDBContainer>
-  );
+    <button onClick={topFunction} id="scrollToTop" title="Go to top">
+      <BsArrowUpCircle />
+    </button>
+  )
 }
 
 export default ScrollToTop;
